@@ -1,0 +1,67 @@
+body {
+    background: #ffc0cb;
+    text-align: center;
+    width: 700px;
+    margin: auto;
+}
+
+.botao {
+    width: 90px;
+    height: 40px;
+    margin: 10px;
+    position: relative;
+    bottom: 15px;
+    border-radius: 20px; /*deixa borda arredondada*/
+    box-shadow: 1px 3px black;
+}
+
+button#start {
+    width: 90px;
+    height: 40px;
+    margin: 10px;
+    position: relative;
+    bottom: 15px;
+    border-radius: 20px; /*deixa borda arredondada*/
+    box-shadow: 1px 3px black;
+}
+
+button#reset {
+    font-size: 10px;
+    text-align: center;
+    width: 50px;
+    height: 40px;
+    margin: 30px;
+    border-radius: 10px; /*deixa borda arredondada*/
+    box-shadow: 2px 4px black;
+    align-content: left;
+}
+
+p {
+    font-size: 18px;
+    color: black;
+    padding: 0px;
+    margin: 20px;
+}
+
+p#clock {
+    font-size: 100px;
+    color: black;
+    padding: 0px;
+    margin: 20px;
+}
+
+section {
+    color:green;
+    background:#b9606f;
+    border-radius: 20px; /*deixa borda arredondada*/
+    padding: 50px;
+    width: 500px;
+    height: 300px;
+    margin: auto; /*junto com WIDTH, centraliza tudo*/
+    box-shadow: 5px 10px black;
+}
+
+footer {
+    margin: 150px;
+    right: 0px;
+}

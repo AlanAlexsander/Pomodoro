@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pomodoro Clock</title>
+</head>
+<body>
+    <h1>Alan's lazy Clock</h1>
+    <h2>Work or study better when the lazy clock keeps you pushing yourself!</h2>
+
+    <p>Pomodoro is a technique used to keep you creative and produtive.
+    The idea is that one would be focus for 25 minutes and take breaks for 5 minutes</p>
+    <section id="quadro">
+        <button id="focus" class="botao" onclick="timer(1)">Focus!</button> <button id="short" class="botao" onclick="timer(2)">Short Break</button> <button id="long" class="botao" onclick="timer(3)">Long Break</button> 
+        <p id="clock"> 25:00 </p>
+        <button id="start" class="botao" onclick="comecar()">START!</button> 
+        <br>
+        <button id="reset" class="botao" onclick="resetar()">Reset Timer</button>
+    </section>
+
+    <script src='script.js'>
+    </script>
+
+    <footer><p>©Copyright by: Alan Silva</p></footer>
+</body>
+</html>
