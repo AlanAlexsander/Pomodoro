@@ -6,7 +6,7 @@ var min = 25
 var sec1 = 0
 var sec2 = 0
 var start = 0
-var running = false 
+var running = false
 var controleDeTempo;
 var ajudaReset = 0
 var somDoBotao = new Audio (`button.wav`);
@@ -37,25 +37,25 @@ function resetar() {
     timer(1)
 }
 
-function contando() { //REALIZA a contagem 
+function contando() { //REALIZA a contagem
     if (sec2 > 0 && sec1 > 0) {
         sec2--
-        tempo.innerHTML = `${min}:${sec1}${sec2}`
+        tempo.innerHTML = `${min.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false})}:${sec1}${sec2}`
         running = true
     } else if (sec2 == 0 && sec1 > 0) {
         sec1--
         sec2 = 9
-        tempo.innerHTML = `${min}:${sec1}${sec2}`
+        tempo.innerHTML = `${min.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false})}:${sec1}${sec2}`
         running = true
     } else if (sec2 > 0 && sec1 == 0) {
         sec2--
-        tempo.innerHTML = `${min}:${sec1}${sec2}`
+        tempo.innerHTML = `${min.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false})}:${sec1}${sec2}`
         running = true
     } else if (min > 0 && sec2 == 0 && sec1 == 0) {
         min--
         sec1 = 5
         sec2 = 9
-        tempo.innerHTML = `${min}:${sec1}${sec2}`
+        tempo.innerHTML = `${min.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false})}:${sec1}${sec2}`
         running = true
     } else if (min == 0 && sec1 == 0 && sec2 == 0){
         finish.play()
@@ -69,7 +69,7 @@ function contando() { //REALIZA a contagem
     }
 }
 
-function timer(value){ // Informa o tempo e qual cor usar 
+function timer(value){ // Informa o tempo e qual cor usar
     if (running == true) {
         var aviso = window.confirm(`The timer is running. Are you sure you would like to change it?`)
         if (aviso == true) {
@@ -83,7 +83,7 @@ function timer(value){ // Informa o tempo e qual cor usar
                 min = 25
                 sec1 = 0
                 sec2 = 0
-                tempo.innerHTML = `${min}:${sec1}${sec2}`
+                tempo.innerHTML = `${min.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false})}:${sec1}${sec2}`
                 document.body.style.background = `#ffc0cb`
                 document.body.style.transition = `background-color 0.8s `
                 quadro.style.background = `#b9606f`
@@ -94,7 +94,7 @@ function timer(value){ // Informa o tempo e qual cor usar
                 min = 5
                 sec1 = 0
                 sec2 = 0
-                tempo.innerHTML = `${min}:${sec1}${sec2}`
+                tempo.innerHTML = `${min.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false})}:${sec1}${sec2}`
                 document.body.style.background = `#AFEEEE`
                 document.body.style.transition = `background-color 0.8s `
                 quadro.style.background = `#05B8CC`
@@ -105,7 +105,7 @@ function timer(value){ // Informa o tempo e qual cor usar
                 min = 10
                 sec1 = 0
                 sec2 = 0
-                tempo.innerHTML = `${min}:${sec1}${sec2}`
+                tempo.innerHTML = `${min.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false})}:${sec1}${sec2}`
                 document.body.style.background = `#00CD66`
                 document.body.style.transition = `background-color 0.8s `
                 quadro.style.background = `#008B45`
